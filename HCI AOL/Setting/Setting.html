@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings</title>
+  <link rel="stylesheet" href="Setting.css" />
+</head>
+<body>
+  <div class="settings-container">
+    <h1>Settings</h1>
+
+    <div class="settings-menu">
+      <button>Account Information</button>
+      <button>Address Book</button>
+      <button>Messages</button>
+
+      <div class="country-setting">
+        <label>
+          <input type="radio" name="country" />
+          <span class="radio-label">
+            <strong>Country</strong><br />
+            ******** is your current country
+          </span>
+        </label>
+      </div>
+
+      <button>Language<br /><small>English</small></button>
+      <button>Account Security</button>
+      <button>Policies</button>
+      <button>Help</button>
+      <button>Feedback</button>
+    </div>
+
+    <button class="logout-button" onclick="location.href='../Signin/loginPage.html'">LOG OUT</button>
+
+    <div class="bottom-nav">
+      <a href="../home/home.html">🏠<br><span>Home</span></a>
+      <a href="../Setting/Setting.html">⚙️<br><span>Setting</span></a>
+      <a href="../messages/messages.html">💬<br><span>Message</span></a>
+      <a href="../Cart/Cart.html">🛒<br><span>Cart</span></a>
+      <a href="../account/account.html">👤<br><span>Account</span></a>
+    </div>
+  </div>
+</body>
+</html>
