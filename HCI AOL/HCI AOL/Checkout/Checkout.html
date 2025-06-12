@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="Checkout.css" />
+</head>
+<body>
+  <div class="checkout-container">
+    <div class="header">
+      <button class="back-btn" onclick="location.href='../Cart/Cart.html'">←</button>
+      <h1>Check Out</h1>
+      <a class="edit-link" href="#" onclick="location.href='../Shipping_page/Shipping_page.html'">Edit &gt;&gt;</a>
+    </div>
+
+    <div class="address-box">
+      <p><strong>Address & Payment</strong><br>***********************</p>
+    </div>
+
+    <h2>ABC Shop</h2>
+
+    <div class="item-list">
+      <div class="item" style="background-color: #fff8dc;">
+        <img src="Headphone.png" alt="Boat Headphones" />
+        <div>
+          <strong>Boat Headphones</strong>
+          <p>$50</p>
+          <span class="stock">In Stock</span>
+        </div>
+        <div class="qty">Qty: 1</div>
+      </div>
+
+      <div class="item" style="background-color: #f0f0f0;">
+        <img src="sunglasses.png" alt="Sunglasses" />
+        <div>
+          <strong>Sunglasses</strong>
+          <p>$75</p>
+          <span class="stock">In Stock</span>
+        </div>
+        <div class="qty">Qty: 1</div>
+      </div>
+
+      <div class="item" style="background-color: #f2f1ff;">
+        <img src="Camera.png" alt="Canon Polaroid" />
+        <div>
+          <strong>Canon Polaroid</strong>
+          <p>$110</p>
+          <span class="stock">In Stock</span>
+        </div>
+        <div class="qty">Qty: 1</div>
+      </div>
+
+      <div class="item" style="background-color: #ffeef0;">
+        <img src="Nike.png" alt="Nike Air 92" />
+        <div>
+          <strong>Nike Air 92</strong>
+          <p>$80</p>
+          <span class="stock">In Stock</span>
+        </div>
+        <div class="qty">Qty: 1</div>
+      </div>
+    </div>
+
+    <div class="delivery-box">
+      <p><strong>Delivery Option</strong></p>
+      <div class="delivery-option">
+        <div class="icon">🚚</div>
+        <div>
+          <strong>Standard Delivery</strong><br />
+          <small>Get by 22–24 Feb</small>
+        </div>
+        <div class="price">$5</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="total">
+        <p>Top up: <strong>$320</strong><br>Total amount: <strong>$320</strong></p>
+      </div>
+      <button class="place-order" onclick="location.href='../Payment_berhasil/Payment berhasil.html'">Place Order</button>
+    </div>
+  </div>
+</body>
+</html>

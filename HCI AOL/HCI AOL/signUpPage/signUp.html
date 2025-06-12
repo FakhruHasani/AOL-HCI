@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Maison Marché</title>
+  <link rel="stylesheet" href="signUpStyles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <div class="back-btn" onclick="location.href='../Signin/loginPage.html'">←</div>
+      <div class="icon-placeholder">★</div>
+    </div>
+
+    <h1>Sign up</h1>
+
+    <form class="form" id="signUpForm">
+      <label>Email</label>
+      <input type="email" placeholder="example@gmail.com" id="email" />
+
+      <label>Create a password</label>
+      <div class="input-group">
+        <input type="password" placeholder="must be 8 characters" id="password" />
+        <i class="fa-regular fa-eye eye" onclick="togglePassword('password', this)"></i>
+      </div>
+
+      <label>Confirm password</label>
+      <div class="input-group">
+        <input type="password" placeholder="repeat password" id="confirmPassword" />
+        <i class="fa-regular fa-eye eye" onclick="togglePassword('confirmPassword', this)"></i>
+      </div>
+
+      <button type="submit" class="login-btn">Sign Up</button>
+    </form>
+
+    <p class="bottom-text">
+      Already have an account? <a href="#" onclick="location.href='../Signin/loginPage.html'">Sign in</a>
+    </p>
+
+    <div class="logo-placeholder">Maison Marché Logo</div>
+    <p class="tagline">Shine Through Your Style</p>
+  </div>
+
+  <script src="signUpScript.js"></script>
+</body>
+</html>

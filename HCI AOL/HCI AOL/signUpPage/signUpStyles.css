@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #8aa4f1, #3b4b94);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icon-placeholder {
+  font-size: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input-group {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+}
+
+.login-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bottom-text {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.bottom-text a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo-placeholder {
+  margin-top: 40px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  margin-top: 4px;
+}

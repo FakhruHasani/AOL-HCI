@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background and layout */
+body.login-page {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #6a78ff, #9c59ff);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Login card */
+.login-container {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+}
+
+/* Logo */
+.logo {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+/* Headings */
+h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  font-size: 12px;
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Remember me & forgot */
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.remember-forgot label {
+  display: flex;
+  align-items: center;
+}
+
+.remember-forgot input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* Button */
+.btn.red {
+  background-color: #ff5b5b;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn.red:hover {
+  background-color: #e14b4b;
+}
+
+/* Separator */
+.separator {
+  margin: 16px 0;
+  opacity: 0.7;
+}
+
+/* Social icons */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social-login img {
+  width: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-login img:hover {
+  transform: scale(1.1);
+}
+
+/* Bottom text */
+.bottom-text {
+  font-size: 12px;
+}
+
+.bottom-text a {
+  color: #fff;
+  text-decoration: underline;
+}

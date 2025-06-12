@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Cart</title>
+  <link rel="stylesheet" href="Cart.css" />
+</head>
+<body>
+  <div class="cart-container">
+    <header>
+      <h1>My Cart <span>🛒</span></h1>
+    </header>
+
+    <div class="tabs">
+      <button class="tab active">All</button>
+      <button class="tab">Buy Again</button>
+    </div>
+
+    <h2 class="shop-title">ABC Shop</h2>
+
+    <div class="cart-items">
+      <div class="item card yellow" data-price="50">
+        <img src="Headphone.png" alt="Boat Headphones"/>
+        <div class="item-details">
+          <h3>Boat Headphones</h3>
+          <p>$50</p>
+          <span class="stock">In Stock</span>
+          <div class="actions">
+            <button>-</button>
+            <span>0</span>
+            <button>+</button>
+            <button class="delete">🗑️</button>
+          </div>
+        </div>
+        <input type="checkbox" />
+      </div>
+
+      <div class="item card gray" data-price="75">
+        <img src="sunglasses.png" alt="Sunglasses"/>
+        <div class="item-details">
+          <h3>Sunglasses</h3>
+          <p>$75</p>
+          <span class="stock">In Stock</span>
+          <div class="actions">
+            <button>-</button>
+            <span>0</span>
+            <button>+</button>
+            <button class="delete">🗑️</button>
+          </div>
+        </div>
+        <input type="checkbox" />
+      </div>
+
+      <div class="item card purple" data-price="110">
+        <img src="Camera.png" alt="Canon Polaroid"/>
+        <div class="item-details">
+          <h3>Canon Polaroid</h3>
+          <p>$110</p>
+          <span class="stock">In Stock</span>
+          <div class="actions">
+            <button>-</button>
+            <span>0</span>
+            <button>+</button>
+            <button class="delete">🗑️</button>
+          </div>
+        </div>
+        <input type="checkbox" />
+      </div>
+
+      <div class="item card red" data-price="80">
+        <img src="Nike.png" alt="Nike Air 92"/>
+        <div class="item-details">
+          <h3>Nike Air 92</h3>
+          <p>$80</p>
+          <span class="stock">In Stock</span>
+          <div class="actions">
+            <button>-</button>
+            <span>0</span>
+            <button>+</button>
+            <button class="delete">🗑️</button>
+          </div>
+        </div>
+        <input type="checkbox" />
+      </div>
+    </div>
+
+    <div class="checkout-bar">
+      <span>Total : <strong id="total-price">$0</strong></span>
+      <button class="checkout" id="checkout-btn">Check Out</button>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="../home/home.html">🏠<br><span>Home</span></a>
+    <a href="../Setting/Setting.html">⚙️<br><span>Setting</span></a>
+    <a href="../messages/messages.html">💬<br><span>Message</span></a>
+    <a href="../Cart/Cart.html">🛒<br><span>Cart</span></a>
+    <a href="../account/account.html">👤<br><span>Account</span></a>
+    </nav>
+  </div>
+
+  <script>
+    const items = document.querySelectorAll('.item');
+    const totalDisplay = document.getElementById('total-price');
+    const checkoutBtn = document.getElementById('checkout-btn');
+
+    function updateTotal() {
+      let total = 0;
+      items.forEach(item => {
+        const price = parseFloat(item.getAttribute('data-price'));
+        const quantity = parseInt(item.querySelector('.actions span').textContent);
+        total += price * quantity;
+      });
+      totalDisplay.textContent = `$${total}`;
+    }
+
+    items.forEach(item => {
+      const minusBtn = item.querySelector('.actions button:nth-child(1)');
+      const countSpan = item.querySelector('.actions span');
+      const plusBtn = item.querySelector('.actions button:nth-child(3)');
+
+      let count = 0;
+
+      plusBtn.addEventListener('click', () => {
+        count++;
+        countSpan.textContent = count;
+        updateTotal();
+      });
+
+      minusBtn.addEventListener('click', () => {
+        if (count > 0) {
+          count--;
+          countSpan.textContent = count;
+          updateTotal();
+        }
+      });
+    });
+
+    checkoutBtn.addEventListener('click', () => {
+      window.location.href = '../Checkout/Checkout.html';
+    });
+  </script>
+</body>
+</html>

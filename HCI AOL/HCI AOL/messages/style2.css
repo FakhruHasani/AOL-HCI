@@ -1,0 +1,128 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-page {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 120px; 
+}
+
+
+.messages-page {
+  padding: 20px;
+  padding-bottom: 100px; 
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.icon-menu {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.icon-box p {
+  font-size: 12px;
+  color: black;
+  margin-top: 5px;
+}
+
+.teal { background-color: #00bcd4; }
+.blue { background-color: #3f51b5; }
+.lightblue { background-color: #81d4fa; }
+.orange { background-color: #ff9800; }
+
+.section-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.message-card {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.msg-icon {
+  font-size: 24px;
+  padding-top: 5px;
+}
+
+.msg-content p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.inner-card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+  font-size: 12px;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}

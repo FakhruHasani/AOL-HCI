@@ -1,0 +1,65 @@
+body.fail-page {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.fail-section {
+  margin-top: 40px;
+}
+
+.fail-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.fail-text {
+  color: #222;
+  font-size: 22px;
+  margin: 16px 0 8px;
+  font-weight: bold;
+}
+
+.fail-desc {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.retry-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.retry-link a:hover {
+  text-decoration: underline;
+}
+
+.back-home {
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #111;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+  font-size: 12px;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}

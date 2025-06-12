@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shipping Address</title>
+  <link rel="stylesheet" href="Shipping_page.css" />
+</head>
+<body>
+  <div class="container">
+    <button class="back-button">&#8592;</button>
+    <h1>Add Shipping Address</h1>
+
+    <form class="form">
+      <div class="row">
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Surname" />
+      </div>
+      <input type="text" placeholder="Phone Number" />
+      <input type="text" placeholder="City/District/Postcode" />
+      <input type="text" placeholder="Unit/Floor" />
+      <input type="text" placeholder="Additional Address Information(Optional)" />
+
+      <div class="address-type">
+        <label>Address Type</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" /> Home</label>
+          <label><input type="checkbox" /> Office</label>
+        </div>
+      </div>
+    </form>
+
+    <hr />
+
+    <section class="payment-section">
+      <h2>Select Payment</h2>
+
+      <div class="payment-methods">
+        <p><strong>Bank cards</strong></p>
+        <label class="radio-option">
+          <input type="radio" name="payment" checked />
+          <span class="radio-mark"></span>
+          <div class="option-details">
+            <strong>Credit or debit card</strong> (Visa / Mastercard / MIR)
+            <p class="note">No transaction fees</p>
+          </div>
+        </label>
+
+        <p><strong>Online payment system</strong></p>
+        <label class="radio-option disabled">
+          <input type="radio" name="payment" disabled />
+          <span class="radio-mark"></span>
+          <div class="option-details">
+            <strong>YouMoney</strong>
+            <p class="note">Temporarily disabled</p>
+          </div>
+        </label>
+      </div>
+
+      <button class="continue-button" onclick="location.href='../Checkout/Checkout.html'">Continue</button>
+      <p class="disclaimer">
+        Data is protected under the PCI DSS standard. We do not store your data and do not share it with the merchant.
+      </p>
+    </section>
+  </div>
+</body>
+</html>
